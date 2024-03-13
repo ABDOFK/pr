@@ -1,0 +1,40 @@
+/* Card styling */
+.card {
+  border: 1px solid #ddd; /* Lighter border for a softer look */
+  border-radius: 10px; /* Maintain rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Consistent padding */
+  margin: 10px; /* Consistent margin */
+  text-align: center; /* Center content within the card */
+  max-width: 250px; /* Consistent width */
+  display: inline-block; /* Allow cards to be placed side-by-side */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Add slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  cursor: pointer; /* Indicate clickable behavior */
+}
+
+/* Card image */
+.card .card-image {
+  max-width: 80%; /* Maintain image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular image */
+  margin-bottom: 10px; /* Consistent spacing */
+}
+
+/* Card title */
+.card .card-title {
+  font-family: Arial, sans-serif; /* Specify a common font */
+  margin: 0; /* Remove default bottom margin */
+  color: #333; /* Darker text for better contrast */
+  font-weight: bold; /* Bold title */
+}
+
+/* Card text */
+.card .card-text {
+  font-family: Arial, sans-serif; /* Specify a common font */
+  color: #666; /* Lighter text for readability */
+}

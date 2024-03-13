@@ -1,0 +1,96 @@
+/* Top bar styling */
+.top-bar {
+  display: flex; /* Arrange content horizontally */
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center; /* Vertically align content */
+  padding: 15px 25px; /* Consistent padding for a balanced look */
+  background-color: #e8d0d0; /* Light, neutral background */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Logo */
+.logo {
+  width: 100px; /* Consistent logo width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+  font-size: 1.1rem; /* Slightly larger heading size */
+  font-weight: bold;
+  color: #333; /* Darker text for contrast */
+  margin: 0; /* Remove default bottom margin */
+  margin-left: 10px; /* Consistent spacing with logo */
+}
+
+/* Search bar */
+input.search-bar {
+  padding: 12px 16px; /* Increased padding for improved user experience */
+  border: 1px solid #ddd; /* Consider using #ccc for a subtly lighter border */
+  width: 30%; /* Consistent width */
+  border-radius: 4px; /* Rounded corners for a modern look */
+  background-color: #fff; /* Light background for better text visibility */
+  color: #444; /* Darker text color */
+  font-size: 14px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for focus */
+  outline: none; /* Remove default outline */
+}
+
+input.search-bar::placeholder {
+  font-family: Arial, sans-serif; /* Specify a common font */
+  font-weight: 400;
+  color: #999;
+}
+
+input.search-bar::before {
+  content: '\f002'; /* Use FontAwesome's search icon code (adjust if using different icons) */
+  font-family: FontAwesome; /* Ensure the icon font is loaded */
+  position: absolute;
+  top: 50%;
+  left: 15px; /* Adjust position for alignment */
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #ccc; /* Lighter color for a subtle visual cue */
+}
+
+/* Icons */
+.icons .icon {
+  margin-left: 20px; /* Consistent spacing */
+  cursor: pointer; /* Indicate clickable behavior */
+  font-size: 18px; /* Consistent icon size throughout */
+  color: #333; /* Darker icon color for better visibility */
+  transition: color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.icons .icon:hover {
+  color: #4caf50; /* Change color on hover for an interactive feel */
+}
+
+/* Navigation */
+nav {
+  background-color: #3f51b5; /* Deep blue primary color */
+  padding: 10px 20px; /* Consistent padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for definition */
+  position: relative; /* Required for proper dropdown positioning */
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center navigation links horizontally */
+}
+
+li {
+  margin: 0 15px; /* Consistent spacing between links */
+  position: relative; /* Required for dropdown positioning */
+}
+
+li a {
+  color: #fff; /* White text for better contrast on the primary background */
+  text-decoration: none;
+  padding: 10px 15px; /* Consistent padding */
+  display: block;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out
+}
